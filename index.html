@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts.js"></script>
+    <title>Kalkulator ósmoklasisty :></title>
+
+</head>
+<body>
+    <header class="box color">
+        <br />
+        <div>
+            <img src="logo.png">
+        </div>
+        <div class="title">
+            <h1>Wylicz to!</h1>
+            <p>Sprawdź orientacyjną liczbę punktów, które możesz uzyskać podczas rekrutacji do ZST nr 6 w Bytomiu<br /><small style="color: #b6b6b6;">"W przypadku znacznie większej liczby chętnych niż ilość planowanych oddziałów liczba
+                miejsc w poszczególnych oddziałach może ulec zwiększeniu."</small></p>
+        </div>
+    </header>
+    <!---WYBIERZ KIERUNEK KTÓRY CIĘ INERESUJE-->
+    <section class="box white">
+        <div>
+            <h2>Kierunek</h2>
+        </div>
+        <div class="form">
+            <select id="profil">
+                <option selected value="0">WYBIERZ</option>
+                <option value="1">Technik informatyk</option>
+                <option value="2">Technik mechatronik</option>
+                <option value="3">Technik programista</option>
+                <option value="4">Technik ekonomista</option>
+                <option value="5">Technik geodeta</option>
+                <option value="6">Technik urządzeń i systemów energetyki odnawialnej</option>
+            </select>
+        </div>
+    </section>
+    <!---EGZAMIN ÓSMOKLASISTY-->
+    <section class="box color">
+        <div>
+            <h2>Egzamin ósmoklasisty</h2>
+        </div>
+        <div  class="form">
+            <form id="form1">
+                <label for="egzamin-polski">Język polski</label>
+                <input type="number" min="0" max="100" placeholder="Wpisz liczbę od 0-100" id="e-polski" required />
+                <label for="egzamin-matematyka">Matematyka</label>
+                <input type="number" min="0" max="100" placeholder="Wpisz liczbę od 0-100" id="e-matma" required />
+                <label for="egzamin-obcy">Język obcy nowożytny</label>
+                <input type="number" min="0" max="100" placeholder="Wpisz liczbę od 0-100" id="e-obcy" required />
+            </form>
+        </div>
+    </section>
+    <!----ŚWIADECTWO UKOŃCZENIA SZKOŁY PODSTAOWEJ-->
+    <section class="box white">
+        <div>
+            <h2>Świadectwo ukończenia szkoły podstawowej</h2>
+        </div>
+        <div class="form">
+            <form  id="form2">
+                <label for="ocena-polski">Język polski</label>
+                <input type="number" min="2" max="6" placeholder="Wpisz liczbę od 2-6" id="ocena-polski" required />
+                <label for="ocena-matematyka">Matematyka</label>
+                <input type="number" min="2" max="6" placeholder="Wpisz liczbę od 2-6" id="ocena-matma" required />
+                <label d="1p" for="ocena-pierwszy">1 przedmiot wiodący</label>
+                <input type="number" min="2" max="6" placeholder="Wpisz liczbę od 2-6" id="ocena-pierwszy" required />
+                <label id="2p" for="ocena-pierwszy">2 przedmiot wiodący</label>
+                <input type="number" min="2" max="6" placeholder="Wpisz liczbę od 2-6" id="ocena-drugi" required />
+                </form>
+        </div>
+    </section>
+    <!----OSIĄGNIĘCIA UCZNIA ---->
+    <section class="box color">
+        <div>
+            <h2>Osiągnięcia</h2>
+        </div>
+        <div class="form">
+            <form id="form3">
+                <label for="wyroznienie">Świadectwo z wyróżnieniem</label>
+                <select id="wyroznienie">
+                    <option selected value="0">WYBIERZ</option>
+                    <option value="7">TAK</option>
+                    <option value="0">NIE</option>
+                </select>
+                <label for="wolontariat">Wolontariat</label>
+                <select id="wolontariat">
+                    <option selected value="0">WYBIERZ</option>
+                    <option value="3">TAK</option>
+                    <option value="0">NIE</option>
+                </select>
+            </form>
+        </div>
+    </section>
+    <!---KONKURSY RÓŻNE RÓŻNISTE >.> -->
+    <section class="box white lastf">
+        <div class="lasth">
+            <h2>Konkursy</h2>
+        </div>
+        <div class="form lastf">
+            <form id="form4">
+                <label for="k1">Uzyskanie w zawodach wiedzy będących konkursem o zasięgu ponadwojewódzkim organizowanym przez kuratorów oświaty na podstawie zawartych porozumień:</label>
+                <select id="k1">
+                    <option selected="" value="0"><span>Wybierz</span></option>
+                    <option value="10">tytułu finalisty konkursu przedmiotowego</option>
+                    <option value="7">tytułu laureata konkursu tematycznego lub interdyscyplinarnego</option>
+                    <option value="5">tytułu finalisty konkursu tematycznego lub interdyscyplinarnego</option>
+                </select>
+                <label for="k2">Uzyskanie w zawodach wiedzy będących konkursem o zasięgu międzynarodowym lub ogólnopolskim albo turniejem o zasięgu ogólnopolskim:</label>
+                <select id="k2">
+                    <option selected="" value="0">Wybierz</option>
+                    <option value="10"><span>tytułu finalisty konkursu z przedmiotu lub przedmiotów artystycznych objętych ramowym planem nauczania</span></option>
+                    <option value="4">tytułu laureata turnieju z przedmiotu lub przedmiotów artystycznych nieobjętych ramowym planem nauczania</option>
+                    <option value="3">tytułu finalisty turnieju z przedmiotu lub przedmiotów artystycznych nieobjętych ramowym planem nauczania</option>
+                </select>
+                <label for="k3">Uzyskanie w zawodach wiedzy będących konkursem o zasięgu wojewódzkim organizowanym przez kuratora oświaty:</label>
+                <select id="k3">
+                    <option selected="" value="0">Wybierz</option>
+                    <option value="10">dwóch lub więcej tytułów finalisty konkursu przedmiotowego</option>
+                    <option value="7">dwóch lub więcej tytułów laureata konkursu tematycznego lub interdyscyplinarnego </option>
+                    <option value="5">dwóch lub więcej tytułów finalisty konkursu tematycznego lub interdyscyplinarnego</option>
+                    <option value="7">tytułu finalisty konkursu przedmiotowego</option>
+                    <option value="5">tytułu laureata konkursu tematycznego lub interdyscyplinarnego</option>
+                    <option value="3">tytułu finalisty konkursu tematycznego lub interdyscyplinarnego</option>
+                </select>
+                <label for="k4">Uzyskanie w zawodach wiedzy będących konkursem albo turniejem, o zasięgu ponadwojewódzkim lub wojewódzkim:</label>
+                <select id="k4">
+                    <option selected="" value="0">Wybierz</option>
+                    <option value="10">dwóch lub więcej tytułów finalisty konkursu z przedmiotu lub przedmiotów artystycznych objętych ramowym planem nauczania</option>
+                    <option value="7">dwóch lub więcej tytułów laureata turnieju z przedmiotu lub przedmiotów artystycznych nieobjętych ramowym planem nauczania</option>
+                    <option value="5">dwóch lub więcej tytułów finalisty turnieju z przedmiotu lub przedmiotów artystycznych nieobjętych ramowym planem nauczania</option>
+                    <option value="7">tytułu finalisty konkursu z przedmiotu lub przedmiotów artystycznych objętych ramowym planem nauczania</option>
+                    <option value="3">tytułu laureata turnieju z przedmiotu lub przedmiotów artystycznych nieobjętych ramowym planem nauczania</option>
+                    <option value="2">tytułu finalisty turnieju z przedmiotu lub przedmiotów artystycznych nieobjętych ramowym planem nauczania</option>
+                </select>
+                <label for="k5">Uzyskanie wysokiego miejsca w zawodach wiedzy innych niż wymienione w pkt 1-4, artystycznych lub sportowych, organizowanych przez kuratora oświaty lub inne podmioty działające na terenie szkoły, na szczeblu:</label>
+                <select id="k5">
+                    <option selected="" value="0">Wybierz</option>
+                    <option value="4">międzynarodowym</option>
+                    <option value="3">krajowym</option>
+                    <option value="2">wojewódzkim</option>
+                    <option value="1">powiatowym</option>
+                    </select>
+            </form>
+        </div>
+    </section>
+    <section class="box color result">
+        <h3>Wynik:</h3>
+        <p id="wynik">0</p>
+    </section>
+</body>
+</html>

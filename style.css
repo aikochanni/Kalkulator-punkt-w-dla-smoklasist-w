@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: grey;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+  color: grey;
+  font-style: 1.5rem;
+  font-weight: bold;
+  letter-spacing: -0.025rem;
+  flex-direction: row;
+}
+
+header div {
+  flex-direction: column;
+}
+
+header img {
+  height: 80px;
+  width: 80px;
+  margin-right: 20px;
+  float: left;
+}
+
+.title {
+  width: 80%;
+  float: left;
+  margin-top: -20px;
+}
+
+section {
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+section div {
+  width: 50%;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+p {
+  margin-top: 0px;
+}
+
+h2 {
+  flex: 0 0 25%;
+  max-width: 80%;
+  font-size: 2rem;
+  line-height: 1;
+  text-align: right;
+  border-right: 1px solid black;
+  padding-right: 20px;
+}
+
+.white {
+  background-color: #ffffff;
+  color: #5d4f6f;
+}
+
+.color {
+  background-color: #5d4f6f;
+  color: #ffffff;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 20px 0 20px 0;
+}
+
+.form {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+label {
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+input,
+input::placeholder,
+select {
+  width: 100%;
+  background-color: #8a76a5;
+  border: none;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-family: inherit;
+  font-weight: 700;
+  padding: 0.5rem 2.5rem;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.entered {
+  margin-bottom: 5px;
+}
+
+option {
+  font-size: small;
+  white-space: normal !important;
+  overflow-wrap: break-word;
+}
+
+.lasth {
+  max-width: 30%;
+}
+
+section .lasth div {
+  max-width: 100%;
+}
+
+.lastf {
+  flex: 0 0 70%;
+  max-width: 100%;
+}
+
+.result {
+  position: fixed;
+  top: 100%;
+  margin-top: -6em;
+  width: 20%;
+  height: 100px;
+  margin-left: -5px;
+  background-color: #5d4f6f;
+  color: #ffffff;
+  flex-direction: column;
+}
